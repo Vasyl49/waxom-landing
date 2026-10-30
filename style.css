@@ -73,6 +73,8 @@ body {
 }
 
 .nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
 .nav-link.active {
     color: #c7b299;
 }
@@ -299,7 +301,9 @@ body {
 }
 
 .service-card.active .service-title,
-.service-card:hover .service-title {
+.service-card:hover .service-title,
+.service-card:active .service-title,
+.service-card:focus-within .service-title {
     color: #c7b299;
 }
 
@@ -321,7 +325,9 @@ body {
 }
 
 .service-card.active .service-line,
-.service-card:hover .service-line {
+.service-card:hover .service-line,
+.service-card:active .service-line,
+.service-card:focus-within .service-line {
     background-color: #c7b299;
 }
 

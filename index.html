@@ -19,7 +19,7 @@
 
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Home</a></li>
                     <li><a href="#" class="nav-link">About Us</a></li>
                     <li><a href="#" class="nav-link">Portfolio</a></li>
                     <li><a href="#" class="nav-link">Features</a></li>
@@ -61,7 +61,7 @@
 
         <div class="hero-dots">
             <span class="dot"></span>
-            <span class="dot active"></span>
+            <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -81,7 +81,7 @@
                 <div class="service-line"></div>
             </div>
 
-            <div class="service-card active">
+            <div class="service-card">
                 <div class="service-icon">
                     <img src="images/service_Development.png" alt="Development">
                 </div>
@@ -140,5 +140,28 @@
         </div>
     </section>
 
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                document.querySelectorAll('.service-card').forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('.dot').forEach(dot => {
+            dot.addEventListener('click', function() {
+                document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
