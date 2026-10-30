@@ -146,28 +146,5 @@
         </div>
     </section>
 
-    <script>
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('click', function() {
-                document.querySelectorAll('.service-card').forEach(c => c.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        document.querySelectorAll('.dot').forEach(dot => {
-            dot.addEventListener('click', function() {
-                document.querySelectorAll('.dot').forEach(d => d.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
