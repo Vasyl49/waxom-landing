@@ -108,15 +108,15 @@ body {
 
 .hero {
     position: relative;
-    height: 1024px;
-    background: #111111 url('images/hero-bg.jpg') center top / cover no-repeat;
+    min-height: 100vh;
+    background: #111111 url('images/hero-bg.jpg') center center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #ffffff;
-    padding: 0 15px;
+    padding: 100px 15px 60px;
 }
 
 .hero-content {
@@ -202,11 +202,11 @@ body {
 }
 
 .hero-arrow-left {
-    left: 150px;
+    left: clamp(20px, 6vw, 150px);
 }
 
 .hero-arrow-right {
-    right: 150px;
+    right: clamp(20px, 6vw, 150px);
 }
 
 .hero-arrow img {
