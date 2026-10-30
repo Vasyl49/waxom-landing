@@ -278,6 +278,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 28px;
+    position: relative;
     transition: transform 0.3s;
 }
 
@@ -285,10 +286,25 @@ body {
     display: block;
     max-height: 52px;
     width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.service-icon .icon-hover {
+    display: none;
 }
 
 .service-card:hover .service-icon {
     transform: scale(1.08);
+}
+
+.service-card:hover .service-icon .icon-default,
+.service-card.active .service-icon .icon-default {
+    display: none;
+}
+
+.service-card:hover .service-icon .icon-hover,
+.service-card.active .service-icon .icon-hover {
+    display: block;
 }
 
 .service-title {
@@ -300,10 +316,8 @@ body {
     transition: color 0.3s;
 }
 
-.service-card.active .service-title,
 .service-card:hover .service-title,
-.service-card:active .service-title,
-.service-card:focus-within .service-title {
+.service-card.active .service-title {
     color: #c7b299;
 }
 
@@ -324,10 +338,8 @@ body {
     transition: background-color 0.3s;
 }
 
-.service-card.active .service-line,
 .service-card:hover .service-line,
-.service-card:active .service-line,
-.service-card:focus-within .service-line {
+.service-card.active .service-line {
     background-color: #c7b299;
 }
 
