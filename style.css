@@ -9,8 +9,6 @@ body {
     color: #8c8c8c;
     background-color: #ffffff;
     line-height: 1.6;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -72,7 +70,6 @@ body {
     font-size: 14px;
     font-weight: 300;
     transition: color 0.3s;
-    white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -135,7 +132,6 @@ body {
     line-height: 1.2;
     margin-bottom: 14px;
     color: #ffffff;
-    letter-spacing: -0.5px;
 }
 
 .hero-title {
@@ -145,7 +141,6 @@ body {
     line-height: 1.15;
     margin-bottom: 19px;
     color: #ffffff;
-    letter-spacing: -1px;
 }
 
 .hero-desc {
@@ -182,7 +177,6 @@ body {
     border: none;
     box-shadow: inset 0 -3px 0 #736357;
     padding: 18px 38px;
-    letter-spacing: 0.5px;
 }
 
 .btn-primary:hover {
@@ -350,7 +344,6 @@ body {
     font-weight: 600;
     color: #555555;
     margin-bottom: 24px;
-    letter-spacing: -0.5px;
 }
 
 .section-desc {
@@ -376,7 +369,6 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-    vertical-align: bottom;
 }
 
 .purchase-banner {
